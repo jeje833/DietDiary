@@ -133,7 +133,8 @@ export function render() {
   ${dateStrip(key, (k) => {
     if (k > today) return null;
     const s = dayStats(k);
-    if (s.rate == null || (k === today && s.done === 0)) return null;
+    // 오늘은 진행 중이므로 80% 이상 달성했을 때만 표시
+    if (s.rate == null || (k === today && s.rate < 0.8)) return null;
     return { cls: rateClass(s.rate) };
   })}
   <section class="card summary">
