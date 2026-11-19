@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "DietDiary - 다이어트 루틴 다이어리",
+  "short_name": "DietDiary",
+  "description": "식단 기록, 운동 스케줄, 다이어트 습관 루틴을 한 곳에서 관리하는 자기관리 앱",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./?source=pwa#/today",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3F5F7",
+  "theme_color": "#F3F5F7",
+  "categories": ["health", "fitness", "lifestyle", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "오늘의 루틴", "short_name": "오늘", "url": "./#/today", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "식단 기록", "short_name": "식단", "url": "./#/meals", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "오늘의 운동", "short_name": "운동", "url": "./#/workout", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
